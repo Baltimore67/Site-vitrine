@@ -1,0 +1,194 @@
+/* --- VARIABLES DE LA CHARTE GRAPHIQUE --- */
+:root {
+	--couleur-primaire: #2c3e50; /* Bleu Acier */
+	--couleur-accent: #e67e22;   /* Orange Sport */
+	--couleur-fond: #f9f9f9;
+	--couleur-texte: #333333;
+}
+
+/* --- REGLAGES DE BASE --- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	color: var(--couleur-texte);
+	background-color: var(--couleur-fond);
+}
+
+.conteneur-sections {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.titre-centre {
+	text-align: center;
+	margin-bottom: 30px;
+	color: var(--couleur-primaire);
+	text-transform: uppercase;
+}
+
+/* --- HEADER ET NAVIGATION --- */
+header {
+	background-color: var(--couleur-primaire);
+	color: #ffffff;
+	padding: 15px 0;
+	border-bottom: 3px solid var(--couleur-accent);
+}
+
+.navigation-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.logo-entete {
+	height: 50px;
+}
+
+.menu-principal {
+	display: flex;
+	list-style: none;
+}
+
+.menu-principal li {
+	margin-left: 25px;
+}
+
+.menu-principal li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	transition: 0.3s;
+}
+
+.menu-principal li a:hover {
+	color: var(--couleur-accent);
+}
+
+/* --- SECTION BANNIERE (HERO) --- */
+.banniere {
+	background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8));
+	color: white;
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.banniere h1 {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+}
+
+.bouton-appel-action {
+	display: inline-block;
+	background-color: var(--couleur-accent);
+	color: white;
+	padding: 12px 30px;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 25px;
+	font-weight: bold;
+}
+
+/* --- GRILLE DES SERVICES (FLEXBOX) --- */
+.grille-services {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.carte-service {
+	flex: 1;
+	background: #ffffff;
+	padding: 25px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	text-align: center;
+}
+
+.carte-service h3 {
+	color: var(--couleur-accent);
+	margin-bottom: 15px;
+}
+
+/* --- FORMULAIRE DE CONTACT --- */
+.zone-formulaire {
+	background-color: #eeeeee;
+}
+
+.formulaire-contact {
+	max-width: 600px;
+	margin: 0 auto;
+	background: white;
+	padding: 30px;
+	border-radius: 8px;
+}
+
+.champ-saisie {
+	margin-bottom: 20px;
+}
+
+.champ-saisie label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.champ-saisie input, 
+.champ-saisie select, 
+.champ-saisie textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.bouton-envoi {
+	width: 100%;
+	padding: 15px;
+	background-color: var(--couleur-primaire);
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.bouton-envoi:hover {
+	background-color: #34495e;
+}
+
+/* --- FOOTER --- */
+footer {
+	background-color: #222222;
+	color: #ffffff;
+	text-align: center;
+	padding: 30px 20px;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
+@media screen and (max-width: 768px) {
+	.navigation-bar, .grille-services {
+		flex-direction: column;
+	}
+
+	.menu-principal {
+		margin-top: 20px;
+	}
+
+	.menu-principal li {
+		margin: 10px 0;
+	}
+
+	.grille-services {
+		gap: 30px;
+	}
+}

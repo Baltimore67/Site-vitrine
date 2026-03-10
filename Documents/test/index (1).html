@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Body Fit Wissembourg | Coach Sportif Diplômé</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<div class="navigation-bar">
+			<img src="assets/img/logo.png" alt="Logo officiel Body Fit Wissembourg" class="logo-entete">
+			<nav>
+				<ul class="menu-principal">
+					<li><a href="#accueil">Accueil</a></li>
+					<li><a href="#prestations">Prestations</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="accueil" class="banniere">
+			<h1>Précision et Performance Physique</h1>
+			<p>Coaching personnalisé à Wissembourg : Fitness, Remise en forme et Préparation au tir sportif.</p>
+			<a href="#contact" class="bouton-appel-action">Prendre rendez-vous</a>
+		</section>
+
+		<section id="prestations" class="conteneur-sections">
+			<h2 class="titre-centre">Mes Services de Coaching</h2>
+			<div class="grille-services">
+				
+				<div class="carte-service">
+					<h3>Diplôme CREPS</h3>
+					<p>Un accompagnement professionnel basé sur une expertise d'État pour votre remise en forme et perte de poids.</p>
+				</div>
+
+				<div class="carte-service">
+					<h3>Préparation au Tir</h3>
+					<p>Optimisez votre concentration et votre posture pour le tir sportif (carabine, pistolet) avec un programme dédié.</p>
+				</div>
+
+				<div class="carte-service">
+					<h3>Suivi Performance</h3>
+					<p>Analyse de vos progrès et adaptation constante des exercices pour atteindre vos objectifs rapidement.</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="contact" class="zone-formulaire">
+			<div class="conteneur-sections">
+				<h2 class="titre-centre">Demande de renseignements</h2>
+				<form action="#" method="POST" class="formulaire-contact">
+					<div class="champ-saisie">
+						<label for="nom">Nom et Prénom :</label>
+						<input type="text" id="nom" name="nom" required placeholder="Votre nom complet">
+					</div>
+
+					<div class="champ-saisie">
+						<label for="choix-objectif">Votre objectif principal :</label>
+						<select id="choix-objectif" name="objectif">
+							<option value="fitness">Remise en forme / Fitness</option>
+							<option value="tir">Coaching Tir Sportif</option>
+							<option value="poids">Perte de poids</option>
+						</select>
+					</div>
+
+					<div class="champ-saisie">
+						<label for="message">Détails de votre demande :</label>
+						<textarea id="message" name="message" rows="5" placeholder="Expliquez-moi votre projet..."></textarea>
+					</div>
+
+					<button type="submit" class="bouton-envoi">Envoyer le message</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="contenu-footer">
+			<p>&copy; 2026 Body Fit Wissembourg - Tous droits réservés</p>
+			<p>Projet réalisé dans le cadre du BTS SIO - Option SLAM/SISR</p>
+		</div>
+	</footer>
+
+</body>
+</html>
