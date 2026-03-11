@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fit Wissembourg | Coach Sportif Diplômé</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <img src="assets/logo.jpg" alt="Logo Body Fit Wissembourg" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#avantages">Avantages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SECTION HERO -->
+        <section id="accueil" class="hero">
+            <h2>Coaching sportif personnalisé à Wissembourg</h2>
+            <p>Diplômé d'État CREPS · Entraîneur officiel de Tir Sportif</p>
+            <p>Un accompagnement sur mesure, adapté à votre niveau et vos objectifs.</p>
+            <a href="#contact" class="bouton">Demander un bilan gratuit</a>
+        </section>
+
+        <!-- SECTION PRÉSENTATION -->
+        <section id="presentation" class="presentation">
+            <h2>Un coaching différent, fait pour vous</h2>
+            <p>
+                Chez Body Fit, pas de programme générique. Je construis un plan d'entraînement
+                adapté à votre corps, vos contraintes et vos objectifs. Que vous souhaitiez
+                perdre du poids, vous remettre en forme ou préparer une compétition de tir,
+                je suis là à chaque étape.
+            </p>
+            <p>
+                Mon double diplôme (CREPS + Entraîneur de Tir) me permet de travailler
+                aussi bien votre condition physique que votre mental et votre concentration.
+            </p>
+        </section>
+
+        <!-- SECTION SERVICES -->
+        <section id="services" class="services">
+            <h2>Mes Services</h2>
+            <div class="grille-services">
+
+                <div class="carte">
+                    <h3>Coaching à domicile</h3>
+                    <p>Je me déplace chez vous avec le matériel nécessaire. Idéal si vous manquez de temps ou préférez un cadre privé.</p>
+                </div>
+
+                <div class="carte carte-vedette">
+                    <p class="badge">Le plus demandé</p>
+                    <h3>Coaching en salle</h3>
+                    <p>Plus jamais perdu face aux machines ! Je vous guide pour utiliser chaque appareil correctement et en toute sécurité.</p>
+                </div>
+
+                <div class="carte">
+                    <h3>Préparation Tir Sportif</h3>
+                    <p>Un programme unique alliant préparation physique et mentale pour améliorer vos performances au tir.</p>
+                </div>
+
+            </div>
+            <div class="centre">
+                <a href="#contact" class="bouton">Je veux en savoir plus</a>
+            </div>
+        </section>
+
+        <!-- SECTION AVANTAGES -->
+        <section id="avantages" class="avantages">
+            <h2>Pourquoi choisir Body Fit ?</h2>
+            <div class="grille-avantages">
+
+                <div class="avantage">
+                    <h3>100% personnalisé</h3>
+                    <p>Chaque programme est créé spécifiquement pour vous, pas de copier-coller.</p>
+                </div>
+
+                <div class="avantage">
+                    <h3>Suivi sécurisé</h3>
+                    <p>Mon diplôme d'État garantit des exercices adaptés même en cas de fragilité ou blessure.</p>
+                </div>
+
+                <div class="avantage">
+                    <h3>Corps et mental</h3>
+                    <p>Je travaille aussi votre concentration et gestion du stress grâce à mon expertise en tir sportif.</p>
+                </div>
+
+                <div class="avantage">
+                    <h3>Local et disponible</h3>
+                    <p>Basé à Wissembourg, je me déplace à domicile ou vous accompagne en salle selon vos préférences.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section id="contact" class="contact">
+            <h2>Prenons contact</h2>
+            <p>Remplissez le formulaire, je vous réponds sous 24h.</p>
+
+            <form action="#" method="POST" id="formulaireContact">
+
+                <label for="nom">Nom et Prénom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Jean Dupont" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="jean@email.fr" required>
+
+                <label for="message">Message :</label>
+                <input type="text" id="message" name="message" placeholder="Votre demande..." required>
+
+                <button type="submit" class="bouton">Envoyer</button>
+
+                <p id="confirmation" style="display:none; color:#1e7e34; font-weight:bold; margin-top:15px; text-align:center;">
+                    Message envoyé ! Je vous recontacte sous 24h.
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Body Fit Wissembourg — Tous droits réservés</p>
+        <p>Projet BTS SIO 1ère année</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
