@@ -1,4 +1,7 @@
-
+/* ================================
+   Body Fit — style.css
+   BTS SIO 1ère année — 2026
+================================ */
 
 /* --- RESET DE BASE --- */
 * {
@@ -64,10 +67,12 @@ nav ul li a:hover {
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .bouton:hover {
     background-color: #cf5220;
+    transform: translateY(-2px);
 }
 
 /* --- SECTION HERO --- */
@@ -141,12 +146,12 @@ nav ul li a:hover {
     text-align: center;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .carte:hover {
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     transform: translateY(-4px);
-    transition: 0.3s;
 }
 
 .carte-vedette {
@@ -209,15 +214,6 @@ nav ul li a:hover {
     flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
-}
-
-.avantage {
-    background-color: #f5f5f5;
-    border-left: 4px solid #e8612a;
-    border-radius: 8px;
-    padding: 25px 20px;
-    width: 230px;
-    text-align: left;
 }
 
 .avantage h3 {
@@ -298,6 +294,56 @@ footer {
 
 footer p {
     margin-bottom: 5px;
+}
+
+/* --- ANIMATIONS CSS (Bloc 4) --- */
+
+/* Animation 1 : apparition progressive de la section hero au chargement */
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h2,
+.hero p,
+.hero .bouton {
+    animation: apparition 0.8s ease forwards;
+}
+
+.hero p:first-of-type { animation-delay: 0.2s; }
+.hero p:last-of-type  { animation-delay: 0.4s; }
+.hero .bouton         { animation-delay: 0.6s; }
+
+/* Animation 2 : hover sur les liens de navigation */
+nav ul li a {
+    transition: color 0.3s;
+}
+
+/* Animation 3 : hover sur les cartes avantages */
+.avantage {
+    background-color: #f5f5f5;
+    border-left: 4px solid #e8612a;
+    border-radius: 8px;
+    padding: 25px 20px;
+    width: 230px;
+    text-align: left;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.avantage:hover {
+    background-color: #ece8e4;
+    transform: translateX(5px);
+}
+
+/* Animation 4 : transition sur les champs du formulaire */
+#formulaireContact input {
+    transition: border-color 0.3s;
 }
 
 /* --- RESPONSIVE TABLETTE (max 900px) --- */
