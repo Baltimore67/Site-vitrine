@@ -1,9 +1,5 @@
-/* ================================
-   Body Fit — style.css
-   BTS SIO 1ère année — 2026
-================================ */
+/* 1. RESET DE BASE */
 
-/* --- RESET DE BASE --- */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +14,9 @@ body {
     background-color: #f5f5f5;
 }
 
-/* --- HEADER --- */
+
+/* 2. HEADER ET NAVIGATION */
+
 header {
     background-color: #1e2d40;
     border-bottom: 3px solid #e8612a;
@@ -48,13 +46,16 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: #e8612a;
 }
 
-/* --- BOUTON GÉNÉRAL --- */
+
+/* 3. BOUTON GÉNÉRAL */
+
 .bouton {
     display: inline-block;
     background-color: #e8612a;
@@ -75,7 +76,9 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* --- SECTION HERO --- */
+
+/* 4. SECTION HERO */
+
 .hero {
     background-color: #1e2d40;
     color: white;
@@ -86,15 +89,23 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 2.2rem;
     margin-bottom: 15px;
+    animation: apparition 0.8s ease forwards;
 }
 
 .hero p {
     font-size: 1.1rem;
     color: #cccccc;
     margin-bottom: 10px;
+    animation: apparition 0.8s ease forwards;
 }
 
-/* --- SECTION PRÉSENTATION --- */
+.hero p:first-of-type { animation-delay: 0.2s; }
+.hero p:last-of-type  { animation-delay: 0.4s; }
+.hero .bouton         { animation-delay: 0.6s; }
+
+
+/* 5. SECTION PRÉSENTATION= */
+
 .presentation {
     background-color: white;
     max-width: 800px;
@@ -115,7 +126,9 @@ nav ul li a:hover {
     font-size: 1.05rem;
 }
 
-/* --- SECTION SERVICES --- */
+
+/* 6. SECTION SERVICES== */
+
 .services {
     background-color: #f5f5f5;
     padding: 60px 20px;
@@ -154,6 +167,18 @@ nav ul li a:hover {
     transform: translateY(-4px);
 }
 
+.carte h3 {
+    color: #1e2d40;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.carte p {
+    font-size: 0.92rem;
+    color: #555555;
+}
+
+/* Carte mise en avant */
 .carte-vedette {
     background-color: #fff8f5;
     border: 2px solid #e8612a;
@@ -170,10 +195,6 @@ nav ul li a:hover {
     color: #555555;
 }
 
-.texte-blanc {
-    color: #555555;
-}
-
 .badge {
     background-color: #e8612a;
     color: white;
@@ -185,22 +206,13 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.carte h3 {
-    color: #1e2d40;
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-}
-
-.carte p {
-    font-size: 0.92rem;
-    color: #555555;
-}
-
 .centre {
     text-align: center;
 }
 
-/* --- SECTION AVANTAGES --- */
+
+/* 7. SECTION AVANTAGES */
+
 .avantages {
     background-color: white;
     padding: 60px 20px;
@@ -222,6 +234,21 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+.avantage {
+    background-color: #f5f5f5;
+    border-left: 4px solid #e8612a;
+    border-radius: 8px;
+    padding: 25px 20px;
+    width: 230px;
+    text-align: left;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.avantage:hover {
+    background-color: #ece8e4;
+    transform: translateX(5px);
+}
+
 .avantage h3 {
     font-size: 1rem;
     color: #1e2d40;
@@ -233,7 +260,9 @@ nav ul li a:hover {
     color: #555555;
 }
 
-/* --- SECTION CONTACT --- */
+
+/* 8. SECTION CONTACT ET FORMULAIRE= */
+
 .contact {
     background-color: #f5f5f5;
     padding: 60px 20px;
@@ -276,6 +305,7 @@ nav ul li a:hover {
     border-radius: 5px;
     font-size: 0.95rem;
     font-family: 'Segoe UI', Arial, sans-serif;
+    transition: border-color 0.3s;
 }
 
 #formulaireContact input:focus {
@@ -283,9 +313,7 @@ nav ul li a:hover {
     outline: none;
 }
 
-/* style du label anti-spam pour le mettre en valeur */
 #label-antispam {
-    margin-top: 18px;
     font-style: italic;
     color: #888888;
     font-size: 0.9rem;
@@ -297,7 +325,9 @@ nav ul li a:hover {
     margin-top: 25px;
 }
 
-/* --- PAGES LÉGALES --- */
+
+/* 9. PAGES LÉGALES */
+
 .page-legale {
     max-width: 800px;
     margin: 0 auto;
@@ -326,7 +356,9 @@ nav ul li a:hover {
     line-height: 1.7;
 }
 
-/* --- FOOTER --- */
+
+/* 10. FOOTER */
+
 footer {
     background-color: #222222;
     color: #aaaaaa;
@@ -348,9 +380,9 @@ footer a:hover {
     color: #e8612a;
 }
 
-/* --- ANIMATIONS CSS (Bloc 4) --- */
 
-/* Animation 1 : apparition progressive de la section hero au chargement */
+/* 11. ANIMATIONS CSS */
+
 @keyframes apparition {
     from {
         opacity: 0;
@@ -362,44 +394,11 @@ footer a:hover {
     }
 }
 
-.hero h2,
-.hero p,
-.hero .bouton {
-    animation: apparition 0.8s ease forwards;
-}
 
-.hero p:first-of-type { animation-delay: 0.2s; }
-.hero p:last-of-type  { animation-delay: 0.4s; }
-.hero .bouton         { animation-delay: 0.6s; }
+/* 12. RESPONSIVE TABLETTE (max 900px) */
 
-/* Animation 2 : hover sur les liens de navigation */
-nav ul li a {
-    transition: color 0.3s;
-}
-
-/* Animation 3 : hover sur les cartes avantages */
-.avantage {
-    background-color: #f5f5f5;
-    border-left: 4px solid #e8612a;
-    border-radius: 8px;
-    padding: 25px 20px;
-    width: 230px;
-    text-align: left;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.avantage:hover {
-    background-color: #ece8e4;
-    transform: translateX(5px);
-}
-
-/* Animation 4 : transition sur les champs du formulaire */
-#formulaireContact input {
-    transition: border-color 0.3s;
-}
-
-/* --- RESPONSIVE TABLETTE (max 900px) --- */
 @media screen and (max-width: 900px) {
+
     .grille-services {
         flex-direction: column;
         align-items: center;
@@ -416,8 +415,11 @@ nav ul li a {
     }
 }
 
-/* --- RESPONSIVE MOBILE (max 600px) --- */
+
+/* 13. RESPONSIVE MOBILE (max 600px) */
+
 @media screen and (max-width: 600px) {
+
     .navbar {
         flex-direction: column;
         gap: 15px;
