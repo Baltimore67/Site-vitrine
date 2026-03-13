@@ -1,3 +1,8 @@
+/* ================================
+   Body Fit — style.css
+   BTS SIO 1ère année — 2026
+================================ */
+
 /* --- RESET DE BASE --- */
 * {
     margin: 0;
@@ -150,17 +155,23 @@ nav ul li a:hover {
 }
 
 .carte-vedette {
-    background-color: #1e2d40;
-    color: white;
-    border-color: #e8612a;
+    background-color: #fff8f5;
+    border: 2px solid #e8612a;
+    border-top: 5px solid #e8612a;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(232, 97, 42, 0.2);
 }
 
 .carte-vedette h3 {
-    color: white;
+    color: #1e2d40;
 }
 
 .carte-vedette p {
-    color: #cccccc;
+    color: #555555;
+}
+
+.texte-blanc {
+    color: #555555;
 }
 
 .badge {
@@ -270,6 +281,14 @@ nav ul li a:hover {
 #formulaireContact input:focus {
     border-color: #e8612a;
     outline: none;
+}
+
+/* style du label anti-spam pour le mettre en valeur */
+#label-antispam {
+    margin-top: 18px;
+    font-style: italic;
+    color: #888888;
+    font-size: 0.9rem;
 }
 
 #formulaireContact .bouton {
